@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "342251323886",
+    "project_id": "laxmi-ee40b",
+    "storage_bucket": "laxmi-ee40b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342251323886:android:2dfd1624a51e0cceee0eff",
+        "android_client_info": {
+          "package_name": "com.example.laxmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342251323886-ujov5lv11g0jj5bddhr8pmtcql6c6p5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPJAJg9aghMBsIrXAayxDcxAD93QvLl8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342251323886-ujov5lv11g0jj5bddhr8pmtcql6c6p5u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
