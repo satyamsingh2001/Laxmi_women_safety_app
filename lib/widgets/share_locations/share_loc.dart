@@ -47,7 +47,7 @@ class _ShareLocationState extends State<ShareLocation> {
                   ],
                 ),
               ),
-              Image.asset(shareLocation,width: 200,) ,
+              Image.asset(shareLocation,width: 120,) ,
             ],
           ),
         ),

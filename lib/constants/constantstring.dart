@@ -15,3 +15,4 @@ const String temple = "assets/livesafe/temple.jpg";
 
 const String shareLocation = "assets/girlshare.png";
 const String girl = "assets/girl.jpg";
+const String parent = "assets/parent.png";

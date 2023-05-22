@@ -9,7 +9,7 @@ class User_Model{
   String? parentemail;
   String? type;
 
-  User_Model({  this.name,  this.id,  this.phone,  this.childemail,  this.parentemail, required type});
+  User_Model({  this.name,  this.id,  this.phone,  this.childemail,  this.parentemail,  this.type});
 
   Map<String,dynamic> toJson()=>{
     'name':name,

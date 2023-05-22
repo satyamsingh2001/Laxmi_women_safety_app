@@ -60,6 +60,7 @@ class _ChildRegisterState extends State<ChildRegister> {
           final jsonData = user.toJson();
           await db.set(jsonData).whenComplete(() {
             goTo(context, Base_Login());
+            Utils.showToastMsg("Registered Successfully");
             setState(() {
               isLoading = false;
             });
@@ -115,7 +116,7 @@ class _ChildRegisterState extends State<ChildRegister> {
                       girl,
                     ),
                     Container(
-                      height: MediaQuery.of(context).size.height *0.75,
+                      height: MediaQuery.of(context).size.height *0.5,
                       child: Form(
                         key: _formkey,
                         child: Column(

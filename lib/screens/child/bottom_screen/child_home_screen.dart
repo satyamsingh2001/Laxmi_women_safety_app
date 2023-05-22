@@ -54,11 +54,14 @@ class _Child_Home_ScreenState extends State<Child_Home_Screen> {
               Livesafe(),
               SizedBox(height: 10,),
               ShareLocation(),
-              Text("Proudly made by Kmcians"
-                , style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    // fontSize: MediaQuery.of(context).size.width*0.06,
-                    color: Colors.grey
+              Align(
+                alignment: Alignment.bottomRight,
+                child: Text("@ Proudly made by Kmcians"
+                  , style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      // fontSize: MediaQuery.of(context).size.width*0.06,
+                      color: Colors.grey
+                  ),
                 ),
               ),
             ],
