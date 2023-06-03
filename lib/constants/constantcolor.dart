@@ -7,8 +7,9 @@ class ConstantColor{
   static const con2 = Color(0xfffb8580);
   static const con3 = Color(0xfffbd079);
   static const button = Color(0xfffd3a77);
-  static const button1 = Colors.black;
   static const textC = Colors.redAccent;
+  static const delete = Colors.red;
+  static const call = Colors.green;
 
   static const txtfld = Color(0xfff3eef2);
 

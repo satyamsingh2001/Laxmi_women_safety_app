@@ -40,8 +40,8 @@ class _EmergencyState extends State<Emergency> {
 
                 Utils.callNumber('6393604028');
               },
-              head: 'Active Emergency', subhead: 'Call 123 for emergency',
-              number: 'Papa', img: alert),
+              head: 'Active Emergency', subhead: 'Call 1090 for women helpline',
+              number: 'Helpline', img: alert),
           CustomContiner(
               ontap: () {
                 Utils.callNumber('109');

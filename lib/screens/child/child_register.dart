@@ -161,7 +161,7 @@ class _ChildRegisterState extends State<ChildRegister> {
                             ),
                             CustomTextField(
                               onsave: (email) {
-                                _formData['gemail'] = email ?? "";
+                                _formData['cemail'] = email ?? "";
                               },
                               validate: (email) {
                                 if (email!.isEmpty ||
@@ -180,8 +180,8 @@ class _ChildRegisterState extends State<ChildRegister> {
                               height: 8,
                             ),
                             CustomTextField(
-                              onsave: (cemail) {
-                                _formData['cemail'] = cemail ?? "";
+                              onsave: (gemail) {
+                                _formData['gemail'] = gemail ?? "";
                               },
                               validate: (email) {
                                 if (email!.isEmpty ||

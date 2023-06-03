@@ -3,16 +3,18 @@ import 'package:laxmi/constants/constantcolor.dart';
 
 class CustomTextField extends StatefulWidget {
   final String? hintText;
+  final String? labeltxt;
   final TextEditingController? controller;
   final String? Function(String?)? validate;
   final String? Function(String?)? onsave;
   final bool isPassword;
+  final bool ?autofoc;
   final TextInputType? keyboard;
   final int? maxLength;
   final Widget ? suffix;
   final Widget ? prefix;
 
-  CustomTextField({Key? key, this.hintText, this.controller, this.validate, this.onsave, required this.isPassword, this.keyboard, this.suffix, this.prefix, this.maxLength}) : super(key: key);
+  CustomTextField({Key? key, this.hintText, this.controller, this.validate, this.onsave, required this.isPassword, this.keyboard, this.suffix, this.prefix, this.maxLength, this.autofoc, this.labeltxt}) : super(key: key);
 
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
@@ -22,6 +24,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      // autofocus: widget.autofoc,
         maxLength: widget.maxLength,
         keyboardType: widget.keyboard==null?TextInputType.name:widget.keyboard,
         onSaved: widget.onsave,
@@ -63,6 +66,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
             suffixIcon: widget.suffix,
             // border: OutlineInputBorder(),
             hintText: widget.hintText,
+            labelText: widget.labeltxt,
             contentPadding: EdgeInsets.only(left: 20, top: 15)));
   }
 }

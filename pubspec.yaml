@@ -41,12 +41,24 @@ dependencies:
   carousel_slider: ^4.1.1
   webview_flutter: ^3.0.4
   sqflite: ^2.2.8+4
+  permission_handler: ^10.2.0
+  contacts_service:
+  geolocator: ^9.0.2
+  geocoding: ^2.1.0
+  background_sms: ^0.0.4
+  image_picker: ^0.8.7+5
+  uuid: ^3.0.7
+  firebase_storage: ^11.2.2
+  cached_network_image: ^3.2.3
+  shake: ^2.2.0
+
+
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-
+  google_fonts: ^4.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter

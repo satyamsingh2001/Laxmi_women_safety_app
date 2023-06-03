@@ -1,5 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:laxmi/chat_module/chat_screen.dart';
+import 'package:laxmi/constants/CustomTextField.dart';
 import 'package:laxmi/db/shared_preference.dart';
 import 'package:laxmi/login.dart';
 import 'package:laxmi/screens/child/bottom_page.dart';
@@ -24,7 +26,11 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: FutureBuilder(
+        home:
+        
+       
+
+        FutureBuilder(
             future: MyShared_Pref.getUserType(),
             builder: (BuildContext context, AsyncSnapshot snapshot){
               if(snapshot.data==""){
@@ -34,10 +40,16 @@ class MyApp extends StatelessWidget {
                 return Bottom_Page();
               }
               if(snapshot.data=="parent"){
-                return Parent_Home_Screen();
+                return ParentHomeScreen();
               }
               return progressIndicator(context);
             })
+
+
+
+
+       
+       
         // MyShared_Pref.getUserType()=="Child"
         //     ? Child_Home_Screen()
         //     :MyShared_Pref.getUserType()=="Parent"

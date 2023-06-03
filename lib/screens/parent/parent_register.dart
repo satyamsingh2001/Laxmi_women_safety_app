@@ -175,23 +175,23 @@ class _ParentRegisterState extends State<ParentRegister> {
                           SizedBox(
                             height: 8,
                           ),
-                          CustomTextField(
-                            onsave: (cemail) {
-                              _formData['cemail'] = cemail ?? "";
-                            },
-                            validate: (email) {
-                              if (email!.isEmpty ||
-                                  email.length < 5 ||
-                                  !email.contains("@")) {
-                                return "Enter valid email address";
-                              } else {
-                                return null;
-                              }
-                            },
-                            isPassword: false,
-                            hintText: "Enter Your Child Email address",
-                            prefix: Icon(Icons.email),
-                          ),
+                          // CustomTextField(
+                          //   onsave: (cemail) {
+                          //     _formData['cemail'] = cemail ?? "";
+                          //   },
+                          //   validate: (email) {
+                          //     if (email!.isEmpty ||
+                          //         email.length < 5 ||
+                          //         !email.contains("@")) {
+                          //       return "Enter valid email address";
+                          //     } else {
+                          //       return null;
+                          //     }
+                          //   },
+                          //   isPassword: false,
+                          //   hintText: "Enter Your Child Email address",
+                          //   prefix: Icon(Icons.email),
+                          // ),
                           SizedBox(
                             height: 8,
                           ),

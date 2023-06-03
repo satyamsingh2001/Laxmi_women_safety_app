@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:laxmi/constants/constantcolor.dart';
+import 'package:laxmi/screens/child/bottom_screen/add_contact_page.dart';
 import 'package:laxmi/screens/child/bottom_screen/chat_page.dart';
 import 'package:laxmi/screens/child/bottom_screen/child_home_screen.dart';
-import 'package:laxmi/screens/child/bottom_screen/contact_page.dart';
 import 'package:laxmi/screens/child/bottom_screen/profile_page.dart';
 import 'package:laxmi/screens/child/bottom_screen/review_page.dart';
 
@@ -17,14 +17,12 @@ class _Bottom_PageState extends State<Bottom_Page> {
   int _currentindex = 0;
   final Screen = [
     Child_Home_Screen(),
-    Chat_Screem(),
-    Contact_Page(),
+    ChatPage(),
+    Add_Contact_Page(),
     Profile_Page(),
-    Review_Page(),
 
 
-
-  ];
+ ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,10 +50,10 @@ class _Bottom_PageState extends State<Bottom_Page> {
             icon: Icon(Icons.person_2_rounded),
             label: 'Profile',
             backgroundColor:ConstantColor.button),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.reviews),
-            label: 'Review',
-            backgroundColor: ConstantColor.button,),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.reviews),
+          //   label: 'Review',
+          //   backgroundColor: ConstantColor.button,),
 
         ],
         onTap: (index){
