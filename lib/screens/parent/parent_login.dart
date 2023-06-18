@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:laxmi/constants/custombutton.dart';
+import 'package:laxmi/screens/child/bottom_screen/testing.dart';
 import 'package:laxmi/screens/parent/parent_register.dart';
 
 import '../../constants/CustomTextField.dart';

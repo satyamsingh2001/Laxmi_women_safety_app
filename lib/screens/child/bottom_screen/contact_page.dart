@@ -130,7 +130,7 @@ class _Contact_PageState extends State<Contact_Page> {
                                     : contacts.length,
                                 shrinkWrap: true,
                                 // primary: true,
-                                physics: NeverScrollableScrollPhysics(),
+                                physics: AlwaysScrollableScrollPhysics(),
                                 itemBuilder: (context, int index) {
                                   Contact contact = isSearchIng == true
                                       ? contactsFiltered[index]
@@ -164,9 +164,7 @@ class _Contact_PageState extends State<Contact_Page> {
                                             ));
                                 }),
                           )
-                        : Container(
-                            child: Text("searching"),
-                          ),
+                        : Text("searching"),
                   ],
                 ),
               ));
@@ -175,7 +173,7 @@ class _Contact_PageState extends State<Contact_Page> {
   void _addContact(Contact_Model newContact) async{
     int result = await _databaseHelper.inserContact_Model(newContact);
     if (result != 0) {
-      Utils.showToastMsg( "contact added successfully");
+      Utils.showToastMsg( "Contact added successfully");
     } else {
       Utils.showToastMsg( "Failed to add contacts");
     }

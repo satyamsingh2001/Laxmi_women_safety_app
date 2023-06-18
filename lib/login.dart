@@ -27,6 +27,11 @@ class _Base_LoginState extends State<Base_Login> {
   final _formkey = GlobalKey<FormState>();
   final _formData = Map<String, Object>();
 
+  @override
+  void initState() {
+    super.initState();
+  }
+  
   _onSubmit() async {
     _formkey.currentState!.save();
     try {
@@ -89,8 +94,9 @@ class _Base_LoginState extends State<Base_Login> {
                         children: [
                           Container(
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
+                                SizedBox(height: 20,),
                                 Text(
                                   "USER LOGIN",
                                   style: TextStyle(

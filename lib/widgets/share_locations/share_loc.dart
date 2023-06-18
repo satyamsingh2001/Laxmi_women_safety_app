@@ -22,7 +22,7 @@ class _ShareLocationState extends State<ShareLocation> {
   _isPermissionGranted() async => await Permission.sms.status.isGranted;
   _sendSms(String phoneNumber, String message, {int? simSlot}) async {
     SmsStatus result = await BackgroundSms.sendMessage(
-        phoneNumber: phoneNumber, message: message, simSlot: 2);
+        phoneNumber: phoneNumber, message: message, simSlot: 1);
     if (result == SmsStatus.sent) {
       print("Sent");
       Utils.showToastMsg( "send");
@@ -111,7 +111,7 @@ class _ShareLocationState extends State<ShareLocation> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "SEND YOUR CUURENT LOCATION IMMEDIATELY TO YOU EMERGENCY CONTACTS",
+                  "SEND YOUR CURRENT LOCATION IMMEDIATELY TO YOU EMERGENCY CONTACTS",
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 20),
                 ),
@@ -139,7 +139,7 @@ class _ShareLocationState extends State<ShareLocation> {
 
                         if (await _isPermissionGranted()) {
                           contactList.forEach((element) {
-                            _sendSms("${element.number}",
+                            _sendSms("${element.name}",
                                 "i am in trouble $messageBody");
                           });
                         } else {

@@ -11,6 +11,7 @@ import 'package:laxmi/constants/CustomTextField.dart';
 import 'package:laxmi/constants/constantcolor.dart';
 import 'package:laxmi/constants/constantstring.dart';
 import 'package:laxmi/constants/custombutton.dart';
+import 'package:laxmi/login.dart';
 import 'package:laxmi/utils/Utils.dart';
 import 'package:uuid/uuid.dart';
 
@@ -134,7 +135,12 @@ class _Profile_PageState extends State<Profile_Page> {
                           : update();
                     }
 
-                  }, txt: "Update")
+                  }, txt: "Update"),
+
+                  CustomButton(ontap: ()async{
+                    await FirebaseAuth.instance.signOut();
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Base_Login()));
+                  }, txt: "Logout")
                 ],
               ),
             )

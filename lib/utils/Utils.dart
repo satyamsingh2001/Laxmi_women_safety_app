@@ -1,3 +1,4 @@
+import 'package:background_sms/background_sms.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
@@ -62,4 +63,15 @@ void goTo(BuildContext context, Widget nextScreen) {
       MaterialPageRoute(
         builder: (context) => nextScreen,
       ));
+}
+
+ sendSms(String phoneNumber, String message, {int? simSlot}) async {
+  SmsStatus result = await BackgroundSms.sendMessage(
+      phoneNumber: phoneNumber, message: message, simSlot: 1);
+  if (result == SmsStatus.sent) {
+    print("Sent");
+    Utils.showToastMsg( "send");
+  } else {
+    Utils.showToastMsg("failed");
+  }
 }

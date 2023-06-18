@@ -4,9 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:laxmi/chat_module/chat_screen.dart';
 import 'package:laxmi/utils/Utils.dart';
 
-class ChatPage extends StatelessWidget {
+class ChatPage extends StatefulWidget {
   const ChatPage({super.key});
 
+  @override
+  State<ChatPage> createState() => _ChatPageState();
+}
+
+class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

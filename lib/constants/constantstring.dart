@@ -16,5 +16,6 @@ const String temple = "assets/livesafe/temple.jpg";
 const String shareLocation = "assets/girlshare.png";
 const String girl = "assets/girl.jpg";
 const String parent = "assets/parent.png";
-const String splash = "assets/splash.gif";
+// const String splash = "assets/splash.gif";
+const String splash = "assets/background.png";
 const String update_photo = "assets/editpic.jpeg";

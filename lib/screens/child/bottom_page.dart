@@ -4,7 +4,6 @@ import 'package:laxmi/screens/child/bottom_screen/add_contact_page.dart';
 import 'package:laxmi/screens/child/bottom_screen/chat_page.dart';
 import 'package:laxmi/screens/child/bottom_screen/child_home_screen.dart';
 import 'package:laxmi/screens/child/bottom_screen/profile_page.dart';
-import 'package:laxmi/screens/child/bottom_screen/review_page.dart';
 
 class Bottom_Page extends StatefulWidget {
   const Bottom_Page({Key? key}) : super(key: key);
